@@ -9,6 +9,9 @@ Also at Calendar Settings can choose all language locales that moment.js support
 
 ![preview](https://raw.githubusercontent.com/NOD507/SenseDateRangePicker/master/dateRangePicker.gif) 
 
+#### 1.1.7
+ * applied patch to fix unresponsive behavior to extension since Qlik Sense 2018 upgrades
+
 #### 1.1.6
  * fixed today option in ranges disappears when max date is set to today. 
 
