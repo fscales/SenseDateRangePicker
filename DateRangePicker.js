@@ -186,7 +186,9 @@ define(["qlik", "jquery", "./lib/moment.min", "./CalendarSettings", "css!./css/s
                         self.backendApi.search(">=" + start.format(DateFormat) + "<=" + end.format(DateFormat))
                             .then(
                                 function (x) {
-                                    self.backendApi.acceptSearch(false);
+                                    self.backendApi.model.getLayout().then(function(){
+                                        self.backendApi.acceptSearch(false);
+                                    })
                                 })
                     });
 
